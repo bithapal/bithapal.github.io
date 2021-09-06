@@ -14,19 +14,19 @@ $(document).ready(function(){
 
   $("a").on('click', function(event) {
 
-  
+
     if (this.hash !== "") {
-     
+
       event.preventDefault();
 
-      
+
       var hash = this.hash;
 
 
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 80, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -37,15 +37,15 @@ $(document).ready(function(){
 </head>
 <body >
 <div class="page-wrapper" id="page-wrapper" style="margin: 20px; border: solid; padding: 5px;">
-    
 
-    
+
+
     <div class="container-fluid">
         <!-- Page Heading -->
 
         <div class="row">
 
-        	
+
             <div class="col-md-9 col-12">
                 	<h2 class="page-header"><a href="#">Bipana Thapaliya&nbsp</a>
                 	</h2>
@@ -55,13 +55,13 @@ $(document).ready(function(){
                 	<strong>Texas Tech University, Lubbock, USA</strong>
                 	<p>Email:<a href="mailto:bipana.thapaliya@ttu.edu"> bipana.thapaliya@ttu.edu</a></p>
                 	<p><a target="_blank" href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F50lUFuFPpEZRvban_WMBhVOILXbN8g-w2Tp-FIYatI0IfJ12lGrZddiYZI6RckmsyWxlEOnHhfYltcyxPBH3xS-tX-Cw&user=vxqGs5gAAAAJ">
-					Google Scholar</a> | <a target="_blank" href="https://www.researchgate.net/profile/Bipana_Thapaliya">Research Gate</a> | <a target="_blank" 
-					href="">Orcid</a></p>   	
+					Google Scholar</a> | <a target="_blank" href="https://www.researchgate.net/profile/Bipana_Thapaliya">Research Gate</a> | <a target="_blank"
+					href="">Orcid</a></p>
             </div>
             <div class="col-12 col-md-3">
             	<img src="assets/image/bip2.jpg" style="width:80%; float: center;">
             </div>
-            
+
         </div>
          <hr>
 
@@ -88,9 +88,18 @@ $(document).ready(function(){
 	  <li class="nav-item">
       <a class="nav-link" href="#industry">Industry Experience</a>
     </li>
-   
+
     <li class="nav-item">
       <a class="nav-link" href="#other_informations">Awards and Achievements</a>
+    </li>
+
+	    <li class="nav-item">
+      <a class="nav-link" href="#extra_informations">Volunteering Activities</a>
+    </li>
+	    </li>
+
+	    <li class="nav-item">
+      <a class="nav-link" href="#training_workshops">Trainings and Workshops</a>
     </li>
   </ul>
 
@@ -98,25 +107,34 @@ $(document).ready(function(){
 <hr>
 <div class=" col-lg-12 col-md-12 col-sm-12" id="about">
 	<h2  class="main_header">About me</h2>
-	
-	<p  class="main_para">I am Bipana Thapaliya, a PhD student in Department of Computer Science, Texas Tech University, Lubbock, Texas, USA. I am originally from Kathmandu, Nepal. 
-	My research is primarily focused on IoT Security and Machine Learning. I am also interested to work in areas of data mining and data analytics.
+
+	<p  class="main_para">Thanks for stopping by! I am Bipana Thapaliya, 4th year PhD student at Texas Tech University
+	specializing in IoT security and machine learning. I work on Physical Unclonable Functions, their silicon experimentation and machine learning based vulnerability study.
+	I am also working on data mining and big data by enhancing clustering techniques for categorical data. Under machine learning and AI,
+	I have worked on neural networks, reinforcement learning, supervised and unsupervised learning, outlier detection, pattern recognition etc.
+	using libraries such as Tensorflow, Keras, PyTorch, Numpy, Scipy, Pandas, Matplotlib, Seaborn etc.
+	I also have some data mining skills such as feature engineering, data cleansing, modeling, mining and statistical analysis of data.
+	I can write using the following programming languages: Python, C, C++, Java, C#, PHP.
+	While I am a PhD researcher following my passion, I have also not missed the opportunity to inspire and
+	motivate other aspiring students to follow their dreams via different roles like TA, instructor or tutor.
+	In my free time, I like to travel and explore the outside. I am also fond of dancing and public speaking.
 	</p>
 
 </div>
 <hr>
 <div class=" col-lg-12 col-md-12 col-sm-12" id="research">
 	<h2 class="main_header">Research</h2>
-	
+
 	<ul class="list-unstyled">
 		<li><h4 class="sub_header">My PhD Advisor</h4>
 			<p class="main_para">I am fortunate to have University Distinguished Professor <a href="http://www.myweb.ttu.edu/yzhuang/" target="_blank">Yu Zhuang</a> as my Phd supervisor.
 	</li><hr>
 		<li><h4 class="sub_header">Research Interests</h4>
 			<ul class="sub_list">
-				<li>Machine Learning</li>
+				<li>Machine Learning/ Deep Learning</li>
 				<li>IoT Security</li>
 				<li>Big Data and Data Mining</li>
+				<li>Categorical data clustering</li>
 				<li> Data Analytics </li>
 			</ul>
 	</li>
@@ -125,9 +143,17 @@ $(document).ready(function(){
 			<h4 class="sub_header">Research Experiences</h4>
 			<p class=""><b>2018 Aug – Present</b> <span style="color: blue;">PhD student researcher</span></p><hr>
 			<ul class="sub_list">
-				<li>Implemented hybrid optimizer enhanced machine learning algorithms for faster training.</li>
-				<li>Conducted experiments on the Physical Unclonable Functions (IoT Security) using machine learning techniques to find the security vulnerabilities</li>
-				<li>Data mining: implementing fast clustering process for categorical data clustering (ongoing).</li>
+				<li>Discovered hybrid optimizer enhanced machine learning algorithms for faster training of the neural network.</li>
+				<li>IoT Security (Physical Unclonable Functions or PUFs)</li>
+				<ul class="sub_sub_list">
+				<li> Implemented PUFs on hardware using Artix-7 devices alongwith the simulation to test its' security vulnerability on real devices. </li>
+				<li> Identified the security vulnerabilities of different PUFs like multiplexer based PUFs(MPUFs), Exclusive OR (XOR PUFs), Interpose PUFs (IPUFs),
+				feed-forward arbiter PUFs (FFPUFs) using the machine learning based attack studies.
+				<li> Improved and extended neural-network based modeling attacks on XOR PUFs from the literature.
+				</ul>
+
+				<li>Derived fast clustering process for categorical data clustering along with surveying several
+				initialization methods from literature (ongoing).</li>
 			</ul><hr>
 			<p class=""><b>2017 Aug – 2017 Oct</b> <span style="color: blue;">Softech Research and Innovation Center, Kathmandu, Nepal</span></p>
 			<ul class="sub_list">
@@ -135,10 +161,10 @@ $(document).ready(function(){
 			</ul><hr>
 			<p class=""><b>2016 Jan – 2016 Sept</b> <span style="color: blue;">Beckon Delve Pvt. Ltd., India</span></p>
 			<ul class="sub_list">
-				<li>Involved in research and development of phone applications that use potential technologies like AR (augmented reality), 
+				<li>Involved in research and development of phone applications that use potential technologies like AR (augmented reality),
 				Egomotion, Facial recognition system, and Human computer interface.</li>
 			</ul>
-			
+
 	</li>
 	</ul>
 </div>
@@ -149,10 +175,11 @@ $(document).ready(function(){
 		<li>
 			<h4 class="sub_header">Lab Instructor/ Teaching Assistant</h4>
 			<ul class="sub_list">
-				<li>Spring 2021 <b>Computational Thinking with Data Science</b> Whitacre College of Engineering, Texas Tech University, TX, USA</li>
-				<li>Fall 2020 <b>Computational Thinking with Data Science</b> Texas Tech University, TX, USA</li>
-				<li>Fall 2019 - Spring 2020 <b>Programming Principles I (Python)</b> Texas Tech University, TX, USA</li>
-				<li>Fall 2018 - Spring 2019 <b>Programming Principles II (C)</b> Texas Tech University, TX, USA</li>
+				<li>Fall 2020 - Spring 2021 <b>Computational Thinking with Data Science</b> Whitacre College of Engineering, Texas Tech University, TX, USA</li>
+				<li>Summer 2020 <b>Special Topic in CS, Secure Software Engineering </b>, Department of Computer Science, Texas Tech University, TX, USA
+				<li>Fall 2019 - Spring 2020 <b>Programming Principles I (Python)</b> Department of Computer Science, Texas Tech University, TX, USA</li>
+				<li>Summer 2019 <b> Theory and Practice of Logic Programming </b> Department of Computer Science, Texas Tech University, TX, USA</li>
+				<li>Fall 2018 - Spring 2019 <b>Programming Principles II (C)</b> Department of Computer Science, Texas Tech University, TX, USA</li>
 			</ul>
 		</li>
 		<hr>
@@ -162,18 +189,18 @@ $(document).ready(function(){
 				<li>Summer 2019, CS Sophomores/Juniors/Seniors <b>Programming Principles II (C)</b> Texas Tech University, TX, USA</li>
 				<li>June 2015 - December 2015 <b>Java Android Programming </b> <span style="color: blue;">Regional Center of Entrepreneurship, Chandigarh, India</span </li>
 			</ul>
-			
+
 		</li>
 		<hr>
 		<li>
 			<h4 class="sub_header">Tutoring</h4>
 			<ul class="sub_list">
 			<li>Spring 2020, Programming Principles I (Python), <b> LAMP tutoring, Whitacre College of Engineering, </b> Texas Tech University, TX, USA</li>
-			<li>Fall 2020, Computational Thinking with Data Science, <b> Whitacre College of Engineering, </b> Texas Tech University, TX, USA</li> 
+			<li>Fall 2020, Computational Thinking with Data Science, <b> Whitacre College of Engineering, </b> Texas Tech University, TX, USA</li>
 			</ul>
 		</li>
 	</ul>
-	
+
 </div>
 <hr>
 <div class=" col-lg-12 col-md-12 col-sm-12" id="education">
@@ -189,7 +216,7 @@ $(document).ready(function(){
 			</ul>
 		</li>
 	</ul>
-	
+
 </div>
 <hr>
 <div id="publication" class=" col-lg-12 col-md-12 col-sm-12">
@@ -198,7 +225,11 @@ $(document).ready(function(){
 		<li>
 			<h4 class="sub_header">Journal Publications</h4>
 			<ul class="sub_list">
-				<li>Khalid Mursi, <b>Bipana Thapaliya</b>, Yu Zhuang, Mohammed Saeed Alkatheiri, Ahmad O. Aseeri, A Fast Deep Learning Method for Security Vulnerability Study of XOR PUFs. <a href="https://www.researchgate.net/publication/344754660_A_Fast_Deep_Learning_Method_for_Security_Vulnerability_Study_of_XOR_PUFs" 	target="_blank"><u>Link</u></a>
+				<li>Khalid Mursi, <b>Bipana Thapaliya</b>, Yu Zhuang, Mohammed Saeed Alkatheiri, Ahmad O. Aseeri,
+				A Fast Deep Learning Method for Security Vulnerability Study of XOR PUFs, Electronics MDPI, October 2020. <a href="https://www.researchgate.net/publication/344754660_A_Fast_Deep_Learning_Method_for_Security_Vulnerability_Study_of_XOR_PUFs" 	target="_blank"><u>Link</u></a>
+				</li>
+				<li> K. Mursi, <b> B. Thapaliya </b> and Y. Zhuang (2020), “A hybrid-optimizer-enhanced neural network method for the security vulnerability study of multiplexer arbiter PUFs”,
+				Journal of Physics, August 2020.
 				</li>
 
 				</ul>
@@ -207,16 +238,17 @@ $(document).ready(function(){
 		<li>
 			<h4 class="sub_header">Conference Proceedings</h4>
 			<ul class="sub_list">
-				<li> K. Mursi, <b> B. Thapaliya </b> and Y. Zhuang (2020), “A hybrid-optimizer-enhanced neural network method for the security vulnerability study of multiplexer arbiter PUFs”, To appear in International Conference on Circuits, Systems and Devices, Kitakyushu, Japan, August 2020.
-				</li>
+				<li> <b> B. Thapaliya </b>, K. Mursi, Y. Zhuang, "Machine Learning-based Vulnerability Study of Interpose PUFs as
+       Security Primitives for IoT Networks", To appear in International Conference on Networking, Architecture and Storage, 2021. </li>
+
 				<li> A. Aseeri, Y. Zhuang, M.S. Alkatheiri and <b> B. Thapaliya </b>, "LaHiIO: Accelerating Persistent Big Data Machine Learning via Latency Hiding IOs", IEEE international Conference on Big Data, 2018.
 •
 
 				</ul>
 		</li><hr>
-	
+
 	</ul>
-	
+
 </div>
 <hr>
 
@@ -227,7 +259,7 @@ $(document).ready(function(){
 				<li>Oct 2016 - Oct 2017, <b>Software Engineer </b>, Softech Foundation Pvt. Ltd., Kathmandu, Nepal </li>
 				<li>Jan 2016 - Sept 2016, <b>Java Android Developer and Project Team Leader</b>, Beckon Delve Pvt. Ltd., Chandigarh, India </li>
 	</ul>
-	
+
 </div>
 <hr>
 
@@ -247,16 +279,63 @@ $(document).ready(function(){
 				<li><b>2018-2019</b> TTU Whitacre College of Engineering Designated ENGR Scholarship</li>
 				<li><b>2011-2015</b> Received 7 “Award of Excellence” awards throughout Undergraduate degree.</li>
 				<li><b>2015</b> Received the most prestigious "Student of the Year" award for all academic years in Bachelor's.</li>
-				
-				 
+
+
 			</ul>
 		</li>
 	</ul>
 	<hr>
 </div>
+
+<div id="extra_informations" class=" col-lg-12 col-md-12 col-sm-12">
+	<h2 class="main_header">Volunteering Activities</h2>
+	<ul class="list-unstyled">
+		<li>
+			<h4 class="sub_header"></h4>
+			<ul class="sub_list">
+				<li><b>2019-2021</b> Secretary for Nepal Students' Association (NSA)- TTU under Students Governments Association.</li>
+				<li><b>2019,2021</b> Volunteer for Arbor Day Plantation.</li>
+				<li><b>2019-2020</b> Active member for the organization "Women's in Computer Science".</li>
+				<li><b>2019-2020</b> Active member for "Society of Women's Engineers".</li>
+				<li><b>2020</b> Judge for 19th Annual Graduate Student Research Poster Competition.</li>
+				<li><b>2020</b> Organized training info session for undergraduate seniors to prepare them for job interviews.</li>
+				<li><b>2019</b> "Worldwide showcase event" participation and volunteering.</li>
+				<li><b>2019</b> "TTU International Culture Fest" participation and volunteering.</li>
+
+
+			</ul>
+		</li>
+	</ul>
+	<hr>
+</div>
+
+<div id="training_workshops" class=" col-lg-12 col-md-12 col-sm-12">
+	<h2 class="main_header">Trainings and Workshops</h2>
+	<ul class="list-unstyled">
+		<li>
+			<h4 class="sub_header"></h4>
+			<ul class="sub_list">
+			<li><b>2021</b> Certified DeepLearning.AI Tensorflow Developer, Coursera. </li>
+				<li><b>2021</b> Certified for completing Graduate Research Strategies Initiative, Texas Tech Libraries.</li>
+				 <li><b>August 2019</b> XSEDE HPC Workshop: Big Data, Hadoop, Spark and Tensorflow.</li>
+<li><b>September 2019</b> XSEDE HPC Workshop: write scalable codes using MPI - the standard programming tool of scalable parallel computing.</li>
+<li><b>November 2019</b> XSEDE HPC Workshop: OpenMP, working knowledge of how to write scalable codes using OpenMP.</li>
+<li><b>Jan 2015 - May 2015</b> 6 months industrial training in java and android from RCE (business partner of Alcanttor,
+Canada), Chandigarh</li>
+<li><b>Jan 2015 - March 2015</b> 4 months internship on PHP-CMS system from Logic ERP solutions, Mohali, India.</li>
+
+
+
+
+			</ul>
+		</li>
+	</ul>
+	<hr>
+</div>
+
  </div>
     <!-- /.container-fluid -->
-<p style="text-align: right; color: red;">Last Updated on: 01/01/2021</p>
+<p style="text-align: right; color: red;">Last Updated on: 09/06/2021</p>
 </div>
 <!-- /#page-wrapper -->
 
@@ -270,4 +349,4 @@ $(document).ready(function(){
 
 </body>
 
-</html> 
+</html>
